@@ -1,0 +1,481 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #333;
+	font-family: sans-serif;
+}
+.header {
+	height: 75px;
+	width: 100vw;
+	background-color: black;
+	position: fixed;
+	z-index: 1;
+}
+.logo {
+	width: 20vw;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+}
+.writing_logo {
+	font-family: 'Inconsolata', monospace;
+	position: absolute;
+	bottom: 7%;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 7px;
+	text-transform: uppercase;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+.writing_logo::first-letter {
+	color: royalblue;
+	font-size: 35px;
+}
+.logo_image {
+	width: 40px;
+	height: 40px;
+}
+.menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.button_menu {
+	font-family: 'Source Code Pro', monospace;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color 0.5s;
+	a {
+		text-decoration: none;
+		color: white;
+		transition: color 0.5s;
+	}
+	a:hover {
+		color: gold;
+	}
+}
+.button_menu:hover {
+	color: gold;
+}
+.content_first {
+	position: relative;
+	top: 0;
+	height: 600px;
+	background-image: url('../img/background.jpg');
+}
+.content_first_r {
+	position: relative;
+	top: 0;
+	height: 100vh;
+	background-image: url('../img/background.jpg');
+}
+.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 30%;
+}
+.login_panel {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	height: 440px;
+	width: 45vw;
+	background-color: rgba(27, 27, 27, 0.612);
+	border-top: 1px solid rgba(255, 217, 0, 0.613);
+	border-left: 1px solid rgba(255, 217, 0, 0.613);
+	border-right: 1px solid rgba(255, 255, 255, 0.725);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.725);
+}
+.login_panel_r {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	height: 500px;
+	width: 45vw;
+	background-color: rgba(27, 27, 27, 0.612);
+	border-top: 1px solid rgba(255, 217, 0, 0.613);
+	border-left: 1px solid rgba(255, 217, 0, 0.613);
+	border-right: 1px solid rgba(255, 255, 255, 0.725);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.725);
+}
+.error {
+	color: rgb(181, 4, 4);
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.success {
+	color: rgb(52, 149, 52);
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.logo_log {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%, -5%);
+}
+.logo_login {
+	width: 70px;
+	height: 70px;
+}
+.inputs {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -60%);
+	text-align: center;
+	// display: flex;
+	// flex-direction: column;
+}
+.text-inputs {
+	margin-bottom: 8px;
+	margin-top: 9px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	color: white;
+}
+.input {
+	width: 400px;
+	color: white;
+	text-align: center;
+	height: 45px;
+	border: 2px solid rgb(35, 99, 99);
+	border-radius: 10px;
+	background-color: rgb(41, 118, 118);
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+}
+.login-button {
+	width: 400px;
+	margin-top: 10px;
+	height: 45px;
+	background-color: rgb(41, 118, 118);
+	border: 2px solid rgb(35, 99, 99);
+	border-radius: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	transition: background-color 0.5s;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+.login-button:hover {
+	background-color: rgb(23, 69, 69);
+	border: none;
+}
+.text-under-button {
+	margin-top: 50px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	text-align: center;
+	height: 1600px;
+}
+.content_second {
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	height: 1510px;
+}
+.compare {
+	position: relative;
+	top: 75px;
+	height: 1000px;
+}
+.compare_h2 {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.compare_w {
+	padding-top: 50px;
+}
+.weapons {
+	display: flex;
+	flex-direction: column;
+	.smg {
+		padding-top: 10px;
+		position: relative;
+		text-align: center;
+
+		h2 {
+			font-family: 'Nunito', sans-serif;
+			font-family: 'Titillium Web', sans-serif;
+			margin-bottom: 15px;
+			font-size: 30px;
+		}
+		.first-row,
+		.second-row {
+			display: flex;
+			justify-content: center;
+			.first {
+				margin-right: 3.5%;
+				margin-left: 3.5%;
+				margin-bottom: 2%;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				background-color: #191919;
+				box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+				width: 450px;
+				height: 660px;
+				border: 2px solid black;
+				border-radius: 10px;
+				color: white;
+				transition: 0.5s, 1s;
+				.image_weapon {
+					align-self: center;
+					width: 230px;
+					height: 130px;
+					transition: transform 0.2s;
+				}
+				.image_weapon:hover {
+					transform: scale(150%);
+				}
+				.name_weapon {
+					font-family: 'Nunito', sans-serif;
+					font-family: 'Roboto Condensed', sans-serif;
+					margin-top: 10px;
+					font-weight: bold;
+					font-size: 23px;
+					margin-bottom: -10px;
+					color: #a9d846;
+				}
+				.rpm {
+					margin-top: -15px;
+					color: #ff9008;
+					font-weight: bold;
+				}
+				.damage {
+					align-self: center;
+					width: 400px;
+				}
+				.damage_text {
+					margin-top: 4px;
+				}
+				.speed {
+					width: 30px;
+					align-self: center;
+					margin-top: 5px;
+				}
+				.time {
+					margin-top: 5px;
+					color: #ff9008;
+				}
+				.reload {
+					margin-top: 5px;
+					width: 20px;
+					align-self: center;
+				}
+				.recoil {
+					margin-top: 5px;
+				}
+				.recoil_text {
+					margin-top: 2px;
+				}
+				.both {
+					margin-top: 8px;
+					.movingd {
+						display: inline-block;
+						margin-right: 10px;
+						.moving {
+							margin-top: 10px;
+						}
+						.moving_txt {
+							display: block;
+							color: #a9d846;
+						}
+					}
+					.standingd {
+						margin-left: 10px;
+						display: inline-block;
+						.standing {
+							margin-top: 10px;
+						}
+						.standing_txt {
+							display: block;
+							color: #a9d846;
+						}
+					}
+				}
+			}
+		}
+		.first:hover {
+			border: 3px solid #ff9008;
+			cursor: pointer;
+			transform: scale(110%);
+		}
+		.second-row {
+			display: flex;
+		}
+	}
+}
+footer {
+	height: 75px;
+	color: white;
+	background-color: black;
+	position: relative;
+	.copyright {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Edu SA Beginner', cursive;
+		font-family: 'Nunito', sans-serif;
+	}
+}
+.check {
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+}
+.b_compare {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	height: 40px;
+	width: 250px;
+	transform: translate(-50%);
+	background-color: rgb(207, 180, 22);
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 10px;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+.b_compare:hover {
+	background-color: rgb(169, 146, 16);
+}
+.pogrubienie {
+	font-size: 150%;
+	font-weight: bold;
+}
+.welcome {
+	font-family: 'Edu SA Beginner', cursive;
+	font-family: 'Edu TAS Beginner', cursive;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.instruction {
+	color: white;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 17px; 
+	.color {
+		font-family: 'Edu SA Beginner', cursive;
+		font-family: 'Edu TAS Beginner', cursive;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 20px;
+		color: green;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 820px) {
+	// *{
+	// 	overflow: hidden;
+	// }
+	.header {
+		height: 120px;
+		.logo {
+			width: 95vw;
+		}
+	}
+	.logo_image {
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		left: 55%;
+		bottom: 30%;
+	}
+	.writing_logo {
+		position: absolute;
+		left: 65%;
+	}
+	.menu {
+		left: 10%;
+		top: 70%;
+		transform: translate(0%, 0%);
+	}
+	.button_menu {
+		font-size: 15px;
+	}
+	.input {
+		width: 300px;
+	}
+	.login-button {
+		width: 300px;
+	}
+	.login_panel {
+		width: 320px;
+		top: 38%;
+	}
+	.login_panel_r {
+		width: 320px;
+		top: 50%;
+	}
+	.content_second {
+		height: 2650px;
+	}
+	.error {
+		font-size: 15px;
+	}
+	.weapons {
+		.smg {
+			h2 {
+				font-size: 25px;
+			}
+			.first-row,
+			.second-row {
+				flex-direction: column;
+				.first {
+					align-self: center;
+					width: 320px;
+					height: 620px;
+					.image_weapon {
+						width: 200px;
+					}
+					.damage {
+						width: 250px;
+					}
+				}
+			}
+		}
+	}
+	.content_first {
+		top: 120px;
+	}
+	footer {
+		height: 100px;
+		.copyright {
+			font-size: 15px;
+		}
+	}
+}
